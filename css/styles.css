@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #02424f;
+}
+
+header{
+    color: aliceblue;
+}
+
+article p{
+    color: #fff;
+}
+
+footer p{
+    color: aqua;
+}
