@@ -1,17 +1,12 @@
-body{
+html, body{
     margin: 0;
     padding: 0;
-    background: #02424f;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
 }
 
-header{
-    color: aliceblue;
-}
-
-article p{
-    color: #fff;
-}
-
-footer p{
-    color: aqua;
+nav{
+    background-color: green;
+    padding: 10px;
+    color: white;
 }
