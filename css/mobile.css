@@ -1,0 +1,35 @@
+@media (max-width: 600px) {
+    .products{
+        display: inherit;
+        height: auto;
+    }
+    .product{
+        margin-top: auto;
+    }
+    .features{
+        text-align: center;
+        display: inherit;
+    }
+    .feature {
+        margin-top: 1rem;
+        max-width: 100%;
+    }
+    .feature_content{
+        width: 100%;
+    }
+    .mentions{
+        display: inherit;
+    }
+    .mention{
+        max-width: 100%;
+    }
+    .mention img{
+        width: 100%;
+    }
+    .mention_content p {
+        padding-bottom: 10px;
+    }
+    .main_section{
+        padding: 4%;
+    }
+}

@@ -1,12 +1,180 @@
-html, body{
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-family: Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+/* -------------------- Inicio Variables-------------*/
+:root {
+    --color-verde: #7acc2d;
+    --color-verde-acento: #538c1e;
+    --color-blanco: #ffffff;
+    --color-gris: rgba(114, 114, 114, 0.53);
+    --color-negro: #333333;
+    /** Espaciados **/
+    --padding: 10px;
+    /** Tipografía **/
+    --normal: 12px;
+    --cabecera-3: 30px;
+    /** Box Shadow **/
+    --box: 0px 0 13px 8px #c1bdbd;
+    --box-menciones: 0 3px 6px #00000029;
 }
 
-nav{
-    background-color: green;
-    padding: 10px;
-    color: white;
+
+/* -------------------- Fin Variables -------------*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--normal);
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: var(--color-verde);
+    padding-left: 20px;
+    color: var(--color-blanco);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding: var(--padding);
+}
+
+nav li a {
+    color: var(--color-negro);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: var(--color-blanco);
+}
+
+/* -------------------- Main Section -------------*/
+
+.main_section {
+    padding: 15%;
+    text-align: center;
+}
+
+.products {
+    background-image: url("../images/curve.png");
+    padding: 10%;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 95px;
+}
+
+.product {
+    margin-top: -230px;
+    padding: var(--padding);
+}
+
+.product .content {
+    background: var(--color-blanco);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+
+.img_content {
+    text-align: center;
+}
+
+.main_button {
+    background-color: var(--color-verde);
+    border: 0;
+    width: 100%;
+    padding: var(--padding);
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--color-blanco);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover {
+    background-color: var(--color-verde-acento);
+}
+
+/********** Beneficios *******/
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 77px 0;
+}
+
+.feature {
+    text-align: center;
+    margin-top: 12rem;
+    max-width: 33.3%;
+}
+
+.feature_content {
+    width: 60%;
+}
+
+.features img {
+    max-width: 139px;
+}
+
+.separator {
+    border: 0.5px solid var(--color-gris);
+}
+
+/************** Menciones **********/
+.subtitle {
+    margin-top: 90px;
+    font-size: var(--cabecera-3);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mentions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mention {
+    border-radius: 3px;
+    max-width: 239px;
+    margin: var(--padding);
+    box-shadow: var(--box-menciones);
+}
+
+.mention_content {
+    margin: 0 9px 0 9px;
+}
+
+.mention_content h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.mention_content p {
+    margin: 3px 0 10px 0;
+}
+
+/************** Footer **********/
+footer {
+    margin-top: 124px;
+    background-color: var(--color-negro);
+    padding: 17px 10px 20px 17px;
+    color: var(--color-blanco);
+    bottom: 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
