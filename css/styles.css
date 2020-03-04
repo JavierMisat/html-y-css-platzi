@@ -13,7 +13,7 @@
     --normal: 12px;
     --cabecera-3: 30px;
     /** Box Shadow **/
-    --box: 0px 0 13px 8px #c1bdbd;
+    --box: 0px 3px 6px #00000029;
     --box-menciones: 0 3px 6px #00000029;
 }
 
@@ -25,6 +25,10 @@ html, body {
     padding: 0;
     font-size: var(--normal);
     font-family: "Open Sans", sans-serif;
+}
+
+p, label{
+    font-size: var(--normal);
 }
 
 nav {
@@ -163,6 +167,45 @@ nav li a:hover {
     margin: 3px 0 10px 0;
 }
 
+/************************************************ Products Page **/
+.productos .row img {
+    max-width: 60%;
+}
+
+.productos .row {
+    margin-top: 100px;
+}
+
+
+/************************************************ Venta Page **/
+.venta{
+    padding: 100px;
+}
+.modulo_pago{
+    background-color: var(--color-blanco);
+    box-shadow: var(--box);
+    padding: var(--padding);
+}
+.modulo_pago_images{
+    margin: auto;
+    max-width: 150px;
+}
+
+.form_venta {
+    padding: var(--padding);
+}
+
+.form_venta input:not(:last-child){
+    margin: 5px 0 10px 0;
+    height: 35px;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+
 /************** Footer **********/
 footer {
     text-align: center;
@@ -172,7 +215,6 @@ footer {
     color: var(--color-blanco);
     bottom: 0;
     width: 100%;
-    position: fixed;
 }
 
 footer ul {
